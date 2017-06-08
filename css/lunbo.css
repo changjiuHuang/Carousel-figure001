@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* banner start */
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: red;
+}
+
+#wrapper .banner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; /* 这里100%，它继承了wrapper的高度，所以还是500px */
+  opacity: 0;
+  transition: 1s;
+}
+
+
+/* 轮播图背景颜色 */
+#wrapper .banner-first {
+  background: rgb(223, 175, 109);
+}
+
+#wrapper .banner-two {
+  background: rgb(232, 232, 232);
+}
+
+#wrapper .banner-three {
+  background: rgb(133, 198, 236);
+}
+
+#wrapper .banner-four {
+  background: rgb(232, 232, 232);
+}
+
+#wrapper .banner-five {
+  background: rgb(232, 232, 232);
+}
+
+#wrapper .banner-six{
+  background: rgb(80, 113, 233);
+}
+
+#wrapper .banner .banner-box {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+/* 按钮 */
+#wrapper .banner-tab {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#wrapper .banner-tab  span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  background: rgba(105, 105, 105, .5);
+}
+
+#wrapper .banner-tab  span.on {
+  background: #fff;
+}
+/* banner end */
